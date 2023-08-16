@@ -21,6 +21,7 @@ I have parameterized the pipeline for enhanced flexibility, utilizing parameters
 By utilizing a configuration JSON file, I've enabled the simultaneous processing of four files through a single pipeline using a trigger. This configuration file contains the necessary data for processing, including URLs and filenames. After uploading the file to Azure storage, I've made adjustments within Azure Data Factory. I've created a Lookup activity to retrieve data from the configuration file, and a Foreach activity to iterate through each file entry. The copy activities within the Foreach loop are dynamically parameterized using the obtained values. After addressing initial errors and fine-tuning the configuration, I've successfully executed the pipeline through the trigger, copying all four files concurrently. This consolidation significantly enhances the efficiency and scalability of the data integration process.
 
 
+![copy activity - data from blob storage](https://github.com/Jenia-Jeba/ETL-pipeline-on-COVID-19-dataset-using-Azure-Data-Factory/assets/39514905/cd0cc0fd-62f4-493c-b37c-e8ab1649062e)
 
 
 
